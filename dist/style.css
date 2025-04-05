@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    align-items: flex-start; /* 讓資訊面板和遊戲區頂部對齊 */
+    gap: 30px; /* 遊戲區和資訊面板的間隔 */
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#gameCanvas {
+    border: 2px solid #333;
+    background-color: #000; /* 遊戲區背景 */
+    display: block; /* 避免 canvas 下方出現小空隙 */
+}
+
+.info-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px; /* 資訊面板最小寬度 */
+    background-color: #d8d8d8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.info-panel h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.info-panel p {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0 0 15px 0; /* 下方留些間距 */
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px; /* 和上方元素間隔 */
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #218838;
+}
+
+.game-over {
+    display: none; /* 預設隱藏 */
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dc3545; /* 紅色 */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    text-align: center;
+}
